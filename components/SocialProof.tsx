@@ -2,27 +2,24 @@
 
 import SectionWrapper from "./SectionWrapper";
 
-/**
- * SocialProof — 3 placeholder testimonial cards ready for real content.
- */
 const testimonials = [
   {
     quote:
-      "Em 2 semanas, nosso processo de relatórios financeiros que levava 3 dias passou a ser feito em 15 minutos. O ROI foi absurdo.",
+      "Em 2 semanas, nosso processo de relatorios financeiros que levava 3 dias passou a ser feito em 15 minutos. O ROI foi imediato.",
     name: "Maria S.",
     role: "CFO, Empresa de Tecnologia",
     initials: "MS",
   },
   {
     quote:
-      "O agente de atendimento resolveu 70% dos tickets sem intervenção humana. Nossa equipe finalmente pode focar no que importa.",
+      "O agente de atendimento resolveu 70% dos tickets sem intervencao humana. Nossa equipe finalmente pode focar no que importa.",
     name: "Carlos R.",
-    role: "Head de Operações, SaaS B2B",
+    role: "Head de Operacoes, SaaS B2B",
     initials: "CR",
   },
   {
     quote:
-      "Automatizamos toda a geração de conteúdo e agendamento de posts. O que levava 20 horas por semana agora roda sozinho.",
+      "Automatizamos toda a geracao de conteudo e agendamento de posts. O que levava 20 horas por semana agora roda sozinho.",
     name: "Ana L.",
     role: "Diretora de Marketing, E-commerce",
     initials: "AL",
@@ -35,9 +32,9 @@ export default function SocialProof() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            O que dizem sobre{" "}
+            Resultados{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lava to-lava-light">
-              nossos agentes
+              em producao
             </span>
           </h2>
         </div>
@@ -48,7 +45,6 @@ export default function SocialProof() {
               key={i}
               className="p-8 rounded-2xl border border-white/5 bg-white/[0.02] flex flex-col"
             >
-              {/* Stars */}
               <div className="flex gap-1 text-lava mb-4">
                 {[...Array(5)].map((_, j) => (
                   <svg key={j} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -57,12 +53,10 @@ export default function SocialProof() {
                 ))}
               </div>
 
-              {/* Quote */}
               <p className="text-white/90 leading-relaxed flex-1 mb-6">
                 &ldquo;{t.quote}&rdquo;
               </p>
 
-              {/* Author */}
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-lava/10 flex items-center justify-center text-lava text-sm font-semibold">
                   {t.initials}

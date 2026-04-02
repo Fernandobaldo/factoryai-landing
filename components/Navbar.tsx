@@ -3,22 +3,18 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-/**
- * Navbar — Minimal fixed navigation with FactoryAI logo and CTA.
- */
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
-    { label: "Soluções", href: "#solucoes" },
-    { label: "Casos de uso", href: "#casos" },
-    { label: "Como funciona", href: "#como-funciona" },
+    { label: "Solucoes", href: "#solucoes" },
+    { label: "Dominios", href: "#casos" },
+    { label: "Processo", href: "#como-funciona" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark-pure/80 backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-lava to-lava-light flex items-center justify-center">
             <span className="text-white font-bold text-sm">F</span>
@@ -28,7 +24,6 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <a
@@ -43,11 +38,10 @@ export default function Navbar() {
             href="#contato"
             className="px-5 py-2 bg-lava hover:bg-lava-light text-white text-sm font-medium rounded-full transition-all duration-200 hover:shadow-[0_0_20px_rgba(255,69,0,0.3)]"
           >
-            Fale com a gente
+            Agendar uma conversa
           </a>
         </div>
 
-        {/* Mobile menu button */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden text-white p-2"
@@ -63,7 +57,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -88,7 +81,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="px-5 py-2 bg-lava text-white text-sm font-medium rounded-full text-center"
               >
-                Fale com a gente
+                Agendar uma conversa
               </a>
             </div>
           </motion.div>

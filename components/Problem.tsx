@@ -2,9 +2,6 @@
 
 import SectionWrapper from "./SectionWrapper";
 
-/**
- * Problem — 3 pain point cards highlighting what costs businesses time and money.
- */
 const painPoints = [
   {
     icon: (
@@ -12,9 +9,9 @@ const painPoints = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "Horas desperdiçadas em tarefas repetitivas",
+    title: "Tarefas repetitivas consomem capacidade tecnica",
     description:
-      "Sua equipe gasta 60% do tempo em processos manuais que poderiam ser automatizados. Cada hora perdida é receita que não entra.",
+      "Equipes qualificadas gastam horas em processos manuais que podem ser abstraidos: triagem de dados, geracao de relatorios, respostas padronizadas.",
   },
   {
     icon: (
@@ -22,9 +19,9 @@ const painPoints = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
       </svg>
     ),
-    title: "Erros humanos que custam caro",
+    title: "Integracoes frageis custam caro",
     description:
-      "Planilhas erradas, dados inconsistentes, relatórios atrasados. Pequenos erros se acumulam e viram prejuízo real.",
+      "Automacoes baseadas em regras quebram com mudancas de API, novos formatos ou edge cases. Agentes LLM lidam com variacao sem reconfiguracao.",
   },
   {
     icon: (
@@ -32,9 +29,9 @@ const painPoints = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
       </svg>
     ),
-    title: "Escalar sem contratar é impossível",
+    title: "Escalar operacoes nao deveria exigir escalar headcount",
     description:
-      "Você precisa crescer, mas cada novo processo exige mais gente. Contratar é lento, caro e nem sempre resolve.",
+      "A curva de crescimento de um negocio nao precisa ser linear com contratacoes. Agentes operam em paralelo, 24/7, sem onboarding.",
   },
 ];
 
@@ -44,13 +41,13 @@ export default function Problem() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            O que está travando o{" "}
+            Onde o crescimento{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-lava to-lava-light">
-              seu crescimento
+              trava
             </span>
           </h2>
           <p className="mt-4 text-muted text-lg max-w-2xl mx-auto">
-            Problemas que parecem pequenos, mas drenam sua operação todos os dias.
+            Padroes recorrentes que limitam a capacidade operacional de empresas em crescimento.
           </p>
         </div>
 
