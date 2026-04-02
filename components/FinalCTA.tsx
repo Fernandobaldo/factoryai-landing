@@ -27,7 +27,7 @@ export default function FinalCTA() {
 
           <div className="mt-10 flex flex-col items-center gap-4">
             <a
-              href="mailto:contato@factoryai.com.br"
+              href="mailto:contact@ftrproduction.com"
               className="group px-10 py-4 bg-lava hover:bg-lava-light text-white font-semibold text-lg rounded-full transition-all duration-300 hover:shadow-[0_0_40px_rgba(255,69,0,0.4)] flex items-center gap-2"
             >
               Fale com a gente
@@ -45,10 +45,10 @@ export default function FinalCTA() {
             <p className="text-sm text-muted">
               ou envie um email para{" "}
               <a
-                href="mailto:contato@factoryai.com.br"
+                href="mailto:contact@ftrproduction.com"
                 className="text-lava hover:text-lava-light transition-colors"
               >
-                contato@factoryai.com.br
+                contact@ftrproduction.com
               </a>
             </p>
           </div>
